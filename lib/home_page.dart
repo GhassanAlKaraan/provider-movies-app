@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:provider_movies_app_demo/cart_button.dart';
-import 'package:provider_movies_app_demo/movie_provider.dart';
-import 'package:provider_movies_app_demo/my_list_view.dart';
+import 'package:provider_movies_app/cart_button.dart';
+import 'package:provider_movies_app/movie_provider.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
