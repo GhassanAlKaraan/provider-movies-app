@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:provider_movies_app/provider/movie_provider.dart';
 
-import 'home_page.dart';
+import 'pages/home_page.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ChangeNotifierProvider(
+    create: (_) => MovieProvider(),
+    child: const MyApp(),
+  ));
 }
 
 class MyApp extends StatelessWidget {
@@ -19,6 +24,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-
-
-
